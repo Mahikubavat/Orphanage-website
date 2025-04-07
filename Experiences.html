@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience at Bal Ashram</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fffaf4;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #c0392b;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 1.7em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1611175694985-cf2b65008449?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+
+    /* Experience Section */
+    .experience-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .experience-section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #c0392b;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .experience-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      transition: transform 0.3s;
+    }
+
+    .experience-card:hover {
+      transform: scale(1.03);
+    }
+
+    .experience-card h3 {
+      color: #d35400;
+      margin-bottom: 10px;
+    }
+
+    .experience-card p {
+      font-size: 1em;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* Testimonial */
+    .testimonial {
+      background-color: #fef5e7;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonial blockquote {
+      font-size: 1.3em;
+      font-style: italic;
+      color: #444;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #c0392b;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 1em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Bal Ashram</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="celebration.html">Celebration</a></li>
+      <li><a href="volunteering.html">Volunteering</a></li>
+      <li><a href="#">Experience</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Real Experiences. True Impact. ❤️</h2>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section">
+    <h2>Stories of Change</h2>
+    <div class="card-container">
+      <div class="experience-card">
+        <h3>Aarav, Volunteer</h3>
+        <p>“Volunteering at Bal Ashram changed my life. The kids’ energy and joy made me more compassionate and grateful.”</p>
+      </div>
+      <div class="experience-card">
+        <h3>Neha, Caregiver</h3>
+        <p>“Being part of their growth journey — seeing them learn, celebrate, and smile — is the most rewarding part of my job.”</p>
+      </div>
+      <div class="experience-card">
+        <h3>Ravi, Former Resident</h3>
+        <p>“Bal Ashram gave me a family when I had none. Today, I work as a teacher, and it all began here.”</p>
+      </div>
+      <div class="experience-card">
+        <h3>Simran, Donor</h3>
+        <p>“Seeing the impact of my support firsthand during festival celebrations was deeply moving.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="testimonial">
+    <blockquote>
+      “Every interaction with these children teaches me resilience and unconditional love. It’s a journey of shared hope.”
+      <span>— Ansh, Ashram Director</span>
+    </blockquote>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <b>POWERED BY</b><br>
+    &copy; 2025 BAL ASHRAM | Building futures with love 💫
+  </footer>
+
+</body>
+</html>

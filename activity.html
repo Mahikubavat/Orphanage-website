@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Volunteering at Bal Ashram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #2c3e50;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h1 {
+  color: #f9ca24;
+  font-size: 1.5em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f9ca24;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1585842567936-c09e3c0bb07f?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+  background-color: #fff3e0;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #d35400;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 900px;
+  margin: 10px auto;
+  font-size: 1.05em;
+  color: #555;
+}
+
+/* Gallery */
+h3 {
+  text-align: center;
+  margin: 50px 0 20px;
+  font-size: 1.8em;
+  color: #2c3e50;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.column img:hover {
+  transform: scale(1.03);
+}
+
+.why {
+  padding: 60px 20px;
+  background-color: #eafaf1;
+  text-align: center;
+}
+
+.why h2 {
+  color: #28b463;
+  margin-bottom: 30px;
+}
+
+.why ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+.why ul li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.why ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #fef9f3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-box {
+  max-width: 700px;
+  margin: auto;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #444;
+  position: relative;
+}
+
+.testimonial-box::before {
+  content: "“";
+  font-size: 4em;
+  color: #f39c12;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+
+.testimonial-box span {
+  display: block;
+  text-align: right;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Contact */
+.contact {
+  background-color: #f1f2f6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 1em;
+}
+
+footer b {
+  font-size: 1.1em;
+  color: #f9ca24;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .about-section h2, .why-volunteer h2, .contact h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+}
+</style>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Bal Ashram</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#why">Why Volunteer</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Join Hands to Make a Difference 💛</h2>
+  </div>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <h2>Volunteering Activity</h2>
+    <p>Volunteering at orphanages in India is a powerful way to bring hope, joy, and change into the lives of underprivileged children.</p>
+    <p>Our volunteers offer emotional support and guidance to children who have faced trauma and loss. Their presence brings light, love, and laughter to the ashram.</p>
+    <p>Beyond helping others, volunteers often discover personal growth, reduced stress, and a deep sense of fulfillment through their contributions.</p>
+  </section>
+
+  <!-- Gallery -->
+  <h3 id="gallery">Some Images of Our Activities</h3>
+  <div class="row">
+    <!-- 3 Columns -->
+    <div class="column">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXJD7z566mVC3VdGNR9XgNtjLLmim3JB6lg&s" alt="activity">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvnf3tj3HHwvlZPSVk2dh0mAKGXYiKDEq7lg&s" alt="activity">
+    </div>
+    <div class="column">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdOgZtxBKjujwSh-JjDqangTrba_ud5sYjtA&s" alt="activity">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRGLLc2S7YCnRYxNmidU0Ybax4TSDjc3TSGw&s" alt="activity">
+    </div>
+    <div class="column">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXnBnEWv6l-8dTcoacJcRHqPYlEU0XkJMgw&s" alt="activity">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIV5aO8Gc88EExMzjTOnxy9Kre_6WrkfpcA&s" alt="activity">
+    </div>
+  </div>
+
+  <!-- Why Volunteer -->
+  <section class="why" id="why">
+    <h2>Why Volunteer With Us?</h2>
+    <ul>
+      <li>Make a real impact in children's lives</li>
+      <li>Gain hands-on experience in childcare and teaching</li>
+      <li>Build emotional intelligence and leadership skills</li>
+      <li>Be part of a vibrant, supportive community</li>
+      <li>Spread love, laughter, and hope</li>
+    </ul>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonial-box">
+      I joined Bal Ashram as a volunteer to help others, but it turned out to be one of the most fulfilling journeys of my life. The smiles I see every day remind me that kindness changes everything.
+      <span>– Aarti, Volunteer (Pune)</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> contact@balashram.org</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Location:</strong> Mumbai, Maharashtra, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <b>POWERED BY</b><br>
+    &copy; BAL ASHRAM | Crafted with ❤️ for every child’s smile
+  </footer>
+
+</body>
+</html>

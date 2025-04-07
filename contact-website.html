@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page - Bal Ashram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="orphanage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .info-item i {
+            font-size: 24px;
+            color: #005f73;
+            margin-top: 5px;
+        }
+
+        .contact-form {
+            background: #e0f7fa;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 95, 115, 0.15);
+            margin-top: 30px;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #023047;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #023047;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #94d2bd;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #028090;
+            outline: none;
+        }
+
+        .submit-btn {
+            background-color: #028090;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #026873;
+        }
+
+        .work h2 {
+            color: #005f73;
+        }
+
+        @media (max-width: 768px) {
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pic">
+            <img src="https://c8.alamy.com/comp/2BNMK3N/social-care-logo-person-helping-child-design-concept-an-illustration-of-orphanage-logo-isolated-on-white-background-2BNMK3N.jpg" alt="logo" width="300" height="300">
+        </div>
+        <h2>&nbsp;Bal Ashram</h2>
+    </header>
+
+    <ul>
+        <li><a class="active" href="home.html"><i class="fa fa-home"></i>&nbsp;HOME</a></li>
+        <li><a href="about.html"><i class="fa fa-edit"></i>&nbsp;ABOUT</a></li>
+        <li><a href="Experiences.html"><i class="fa fa-group"></i>&nbsp;EXPERIENCE</a></li>
+        <li><a href="contact-website.html"><i class="fa fa-phone"></i>&nbsp;CONTACT</a></li>
+        <li><a href="donate_page.html"><i class="fa fa-check-square-o"></i>&nbsp;DONATE</a></li>
+    </ul>
+
+    <section id="contact">
+        <article>
+            <div class="container">
+                <div class="work">
+                    <h2>Get In Touch</h2>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Office</h3>
+                            <p>1, Ravi Complex, Ujala Circle, Ahmedabad</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+91 91067 12345</p>
+                            <p>+91 83609 67890</p>
+                            <p>+91 87809 83456</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>24ceubg058@gmail.com</p>
+                            <p>24ceuhg048@gmail.com</p>
+                            <p>24ceuog004@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="registration">New Child Registration</option>
+                                <option value="feedback">Feedback/Suggestion</option>
+                                <option value="complaint">Complaint</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>Phone: 81000 211211</p>
+        <p>Email: balashram11@gmali.com</p>
+        <br><br><b>POWERED BY</b><br>
+        &copy;&nbsp;BAL ASHRAM
+    </footer>
+</body>
+</html>
