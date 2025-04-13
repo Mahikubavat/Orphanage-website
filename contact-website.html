@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Bal Ashram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+      max-width: 500px;
+      flex: 1 1 400px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #005f73;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .info-item i {
+      font-size: 22px;
+      color: #028090;
+      transition: transform 0.3s ease;
+    }
+
+    .info-item:hover i {
+      transform: scale(1.2);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #023047;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #94d2bd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #028090;
+      outline: none;
+      box-shadow: 0 0 0 2px #b2f5ea;
+    }
+
+    .submit-btn {
+      background-color: #028090;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background-color: #026873;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="fancy-logo">
+      <img src="https://c8.alamy.com/comp/2BNMK3N/social-care-logo-person-helping-child-design-concept-an-illustration-of-orphanage-logo-isolated-on-white-background-2BNMK3N.jpg" alt="Bal Ashram Logo">
+      <div class="site-title">Bal Ashram</div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <ul class="navbar">
+    <li><a href="home.html"><i class="fa fa-home"></i> HOME</a></li>
+    <li><a href="about.html"><i class="fa fa-edit"></i> ABOUT</a></li>
+    <li><a href="Experiences.html"><i class="fa fa-group"></i> EXPERIENCE</a></li>
+    <li><a class="active" href="contact-website.html"><i class="fa fa-phone"></i> CONTACT</a></li>
+    <li><a href="donate_page.html"><i class="fa fa-check-square-o"></i> DONATE</a></li>
+  </ul>
+
+  <!-- Work Section -->
+  <div class="work">
+    <!-- <img src="https://images.unsplash.com/photo-1588776814546-1f8efbdfd3e0?auto=format&fit=crop&w=1350&q=80" alt="Contact Image"> -->
+    <p>We're Here to Help You 🌈</p>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="cards">
+
+    <!-- Contact Info -->
+    <div class="card">
+      <h2>Contact Information</h2>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>1, Ravi Complex, Ujala Circle, Ahmedabad</span></div>
+      <div class="info-item"><i class="fas fa-phone-alt"></i><span>+91 91067 12345<br>+91 83609 67890<br>+91 87809 83456</span></div>
+      <div class="info-item"><i class="fas fa-envelope"></i><span>24ceubg058@gmail.com<br>24ceuhg048@gmail.com<br>24ceuog004@gmail.com</span></div>
+      <div class="info-item"><i class="fas fa-clock"></i><span>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat–Sun: 10:00 AM – 4:00 PM</span></div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="card">
+      <h2>Send Us a Message</h2>
+      <form action="contact-website.html" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="registration">New Child Registration</option>
+            <option value="feedback">Feedback/Suggestion</option>
+            <option value="complaint">Complaint</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Phone: 81000 211211</p>
+    <p>Email: balashram11@gmali.com</p>
+    <br><b>POWERED BY</b><br>
+    &copy; 2025 BAL ASHRAM | Helping hearts, building futures 💖
+  </div>
+
+</body>
+</html>
